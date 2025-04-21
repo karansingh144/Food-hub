@@ -9,7 +9,7 @@ const {carts} =useSelector((state)=>state.allCart);
       // console.log(carts);
       
 
-  const [cartCount, setCartCount] = useState(1);
+  const [cartCount, setCartCount] = useState(1); 
   return (
     <div className=''>
       <Navbar style={{height: "60px", background: "black", color:"white "}}>

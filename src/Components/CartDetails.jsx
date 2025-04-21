@@ -67,12 +67,12 @@ const CartDetails = () => {
   return (
     <>
       <div className="flex justify-center ">
-        <div className=" border bg-gray-100 flex flex-col justify-center mt-5 h-50 w-200 rounded">
-          <div className="flex justify-between items-center border rounded h-15 w-full bg-dark ">
-            <h4 className="text-white ml-2 ">Cart Calculation{carts.length >0 ? `(${carts.length})`:""}</h4>
+        <div className=" border bg-gray-100 flex flex-col justify-center mt-5 h-50 w-300 xl:w-200 rounded">
+          <div className="flex justify-between items-center border rounded xl:h-15 lg:h-15 md:h-15 sm:h-15 h-20 w-full bg-dark ">
+            <h4 className="text-white ml-3  ">Cart Calculation{carts.length >0 ? `(${carts.length})`:""}</h4>
             {carts.length > 0 ? (
-              <button className="bg-red-500  h-8 w-30 mr-2 rounded text-white" onClick={emptyCart}>
-                <span>🗑️ Empty Cart</span>
+              <button className="bg-red-500  xl:h-8 xl:w-30 h-15 w-51 mr-2 rounded text-white" onClick={emptyCart}>
+                <span className="xl:text-sm text-3xl" >🗑️ Empty Cart</span>
               </button>
             ) : (
               " "
@@ -85,8 +85,8 @@ const CartDetails = () => {
                   <tr>
                     <td>
                       <div className="p-5">
-                        <img className="h-10 ml-5" src="public/Emptycart.png" />
-                        <p className="text-gray-400">Your Cart is Empty</p>
+                        <img className="xl:h-10 xl:ml-5 lg:ml-5 md:ml-5 sm:ml-5 ml-15  lg:h-10 md:h-10 sm:h-10 h-30   " src="public/Emptycart.png" />
+                        <p className="text-gray-400 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-4xl  ">Your Cart is Empty</p>
                       </div>
                     </td>
                   </tr>

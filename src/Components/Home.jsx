@@ -213,26 +213,26 @@ const Home = () => {
                 <img
                   className='2xl:h-60 2xl:w-full xl:h-60 xl:w-full lg:h-60 lg:w-full md:h-60 md:w-full sm:h-60 sm:w-full h-180 w-full object-cover rounded-2xl'
                   src={element.imgdata}
-                  alt={`Dish: ${element.dish}`}
+                  // alt={`Dish: ${element.dish}`}
                 />
 
                 <div className='flex justify-between mt-2 w-full'>
-                  <h6 className='ml-2 text-sm text-gray-500'>Dish: <span className='font-medium'>{element.dish}</span></h6>
-                  <h6 className='ml-2 font-semibold'>{element.rname}</h6>
-                  <span className='h-6 w-12 p-0.5 rounded bg-green-600 text-white mr-2 flex items-center justify-center text-sm'>
+                  <h6 className='ml-2 h-12 w-50 xl:h-2 lg:h-2 md:h-2 sm:h-2  text-gray-500'> <span className='font-medium text-4xl xl:text-sm lg:text-sm md:text-sm sm:text-sm text-red-600 '>{element.dish}</span></h6>
+                  <h6 className='ml-2 font-semibold '>{element.rname}</h6>
+                  <span className='xl:h-6 xl:w-12 lg:h-6 lg:w-12 md:h-6 md:w-12 sm:h-6 sm:w-12 h-10 w-16 text-xl xl:text-sm lg:text-sm md:text-sm sm:text-sm   p-0.5 rounded bg-green-600 text-white mr-2 flex items-center justify-center '>
                     {element.rating} ✩
                   </span>
                 </div>
 
                 <div className='flex justify-between w-full mt-1'>
-                  <p className='ml-2 text-sm text-gray-700'>{element.address}</p>
-                  <span className='mr-2 text-sm font-medium'>₹{element.price}</span>
+                  <p className='ml-2 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-4xl text-gray-700'>{element.address}</p>
+                  <span className='mr-2 xl:text-sm lg:text-sm md:text-sm sm:text-sm text-4xl font-medium'>₹{element.price}</span>
                 </div>
 
                 <div className='w-full border-b mt-2 mb-2'></div>
 
                 <div className='flex justify-center w-full'>
-                  <button className='border h-8 w-20 rounded bg-blue-600 text-white hover:bg-blue-700' onClick={() => send(element)}>
+                  <button className='border xl:h-8 xl:w-15 lg:h-8 lg:w-20 md:h-8 md:w-20 sm:h-8 sm:w-20 h-12 w-20 xl:text-sm lg:text-sm md:text-sm sm:text-sm  rounded bg-blue-600 text-white hover:bg-blue-700' onClick={() => send(element)}>
                     Add
                   </button>
                 </div>
