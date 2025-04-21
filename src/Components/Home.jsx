@@ -217,7 +217,7 @@ const Home = () => {
                 />
 
                 <div className='flex justify-between mt-2 w-full'>
-                  <h6 className='ml-2 h-12 w-50 xl:h-2 lg:h-2 md:h-2 sm:h-2  text-gray-500'> <span className='font-medium text-4xl xl:text-sm lg:text-sm md:text-sm sm:text-sm text-red-600 '>{element.dish}</span></h6>
+                  <h6 className='ml-2 h-12 w-50 xl:h-2 lg:h-2 md:h-2 sm:h-2  text-gray-500'> <span className='font-medium text-4xl xl:text-sm lg:text-sm md:text-sm sm:text-sm text-blue-600 '>{element.dish}</span></h6>
                   <h6 className='ml-2 font-semibold '>{element.rname}</h6>
                   <span className='xl:h-6 xl:w-12 lg:h-6 lg:w-12 md:h-6 md:w-12 sm:h-6 sm:w-12 h-10 w-16 text-xl xl:text-sm lg:text-sm md:text-sm sm:text-sm   p-0.5 rounded bg-green-600 text-white mr-2 flex items-center justify-center '>
                     {element.rating} ✩
