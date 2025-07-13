@@ -1,12 +1,22 @@
-# React + Vite
+# 🍔 FOOD-HUT – Food Ordering Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive food ordering web application built using **React.js**, **Redux**, **Tailwind CSS**, **Javascript** and **Html**. This project is designed to simulate a real-world food ordering experience with a clean and modern user interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- State management with Redux
+- Fully responsive design for all screen sizes
+- Styled using Tailwind CSS
+- Smooth navigation and UI transitions
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Redux
+- Tailwind CSS
+- Javascript
+- Html5
+
+## 📌 Live Demo
+
+👉 (https://food-hub-gamma-two.vercel.app)
