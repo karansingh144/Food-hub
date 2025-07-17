@@ -3,6 +3,7 @@ import "./CartStyle.css";
 import { useDispatch,useSelector } from "react-redux";
 import { addToCart, removeToCart, removeSingleItems, emptyCartItem } from "../features/cartSlice";
 import toast from 'react-hot-toast';
+import { motion } from "framer-motion";
 
 const CartDetails = () => {
   const {carts} =useSelector((state)=>state.allCart);
@@ -35,6 +36,11 @@ const CartDetails = () => {
       dispatch(emptyCartItem())
       toast.success("Your Cart Is Empty")
     }
+ // Order Now
+   const orderhandle = () => {
+    dispatch(emptyCartItem());
+    toast.success("Order Confirm");
+  };
 
 
     // count total price 
@@ -66,6 +72,12 @@ const CartDetails = () => {
 
   return (
     <>
+       <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="border w-full flex flex-col items-center bg-lime-20 p-4 rounded-lg shadow-md hover:bg-50"
+      >
       <div className="flex justify-center ">
         <div className=" border bg-gray-100 flex flex-col justify-center mt-5 h-50 w-300 xl:w-200 rounded">
           <div className="flex justify-between items-center border rounded xl:h-15 lg:h-15 md:h-15 sm:h-15 h-20 w-full bg-dark ">
@@ -143,6 +155,18 @@ const CartDetails = () => {
           </div>
         </div>
       </div>
+       <div className="flex justify-center items-center mt-3">
+          <button
+            className={`h-10 w-30 bg-dark flex justify-center items-center text-white cursor-pointer rounded ${
+              carts.length === 0 ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            onClick={orderhandle}
+            disabled={carts.length === 0}
+          >
+            Order Now
+          </button>
+        </div>
+          </motion.div>
     </>
   );
 };
